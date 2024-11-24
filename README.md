@@ -89,9 +89,9 @@ If you encounter any issues or have suggestions for improvements, feel free to o
 This script is distributed for educational purposes only and does not constitute financial advice. Trading cryptocurrencies is highly speculative and involves substantial risk of loss. The author of this script takes no responsibility for any financial losses resulting from its use. Users assume full responsibility for their trading decisions and are strongly encouraged to consult a licensed financial advisor before engaging in cryptocurrency trading.
 
 ### Donations
-Bitcoin (BTC): bc1qt63aq5cpumgmv79ssy3ufy6qmawff5ulmx48cm
-Monero (XMR): 86AseotWnLaYoiMGgK79QiC9wRXfCvmSyLBHaa5Z66xWQL3sSruXjGfbLGA3VmJcVWKpmWgUApcNGBUjuCPDLJtNDeewEus
-Litecoin (LTC): MKd5bRmRQ8NxAbuP6rkWvF15BFYpG95KFs
+Bitcoin (BTC): bc1qt63aq5cpumgmv79ssy3ufy6qmawff5ulmx48cm  
+Monero (XMR): 86AseotWnLaYoiMGgK79QiC9wRXfCvmSyLBHaa5Z66xWQL3sSruXjGfbLGA3VmJcVWKpmWgUApcNGBUjuCPDLJtNDeewEus  
+Litecoin (LTC): MKd5bRmRQ8NxAbuP6rkWvF15BFYpG95KFs  
 
 
 
