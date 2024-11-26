@@ -1,7 +1,8 @@
 ## Overview
 This repository contains pre-trained neural network models for trading on Binance Futures. Each model is accompanied by a Python script that enables automated trading. The neural network model independently decides whether to take a long or short position, while you only need to allocate the required amount of funds for trading.
 
-The performance of each provided model for the most recent periods is documented in the [PERFORMANCE.md](PERFORMANCE.md) file.
+Each model's recent performance is in [PERFORMANCE.md](PERFORMANCE.md) file.
+
 
 ## Repository Structure
 All neural network models are stored in the `models` folder. Within this folder, models are organized into subfolders based on the data they were trained on.
