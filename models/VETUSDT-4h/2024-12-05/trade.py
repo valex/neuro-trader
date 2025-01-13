@@ -415,7 +415,7 @@ class BinanceFuturesApi(object):
         # url_combined = "wss://stream.binance.com/stream?streams=btcusdt@kline_1m/ltcusdt@kline_1m/batusdt@kline_1m"
 
         async with websockets.connect(url_raw) as client:
-            while True:
+            while not threading.current_thread().shutdown_flag.is_set():
                 raw_str = await client.recv()
                 raw = json.loads(raw_str) # <class 'dict'>
                 data = raw
