@@ -1,5 +1,7 @@
 ## RSRUSDT-4h
 
+_Note: Performance does not include commissions_
+
 | Model                       | RSRUSDT-4h/2024-11-23 |
 |-----------------------------|-----------------------|
 | Aug 24                      | +77%                  |
@@ -10,6 +12,8 @@
 
 ## VETUSDT-4h
 
+_Note: Performance does not include commissions_
+
 | Model                       | VETUSDT-4h/2024-12-05 |
 |-----------------------------|-----------------------|
 | Sep 24                      | +27%                  |
@@ -19,6 +23,8 @@
 
 
 ## ZRXUSDT-4h
+
+_Note: Performance does not include commissions_
 
 | Model                       | ZRXUSDT-4h/2024-11-20 | ZRXUSDT-4h/2024-11-18 | 
 |-----------------------------|-----------------------|-----------------------|

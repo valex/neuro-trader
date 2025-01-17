@@ -60,9 +60,11 @@ class NNTrader():
         self.lags = algorithm['lags']
 
         self.symbol = symbol
+        self.symbol_configuration = None
         self.bar = bar
 
         self.usd = usd                     # The number of usd traded
+        self.prev_price = None
         self.precision = precision         # Precision to calculate units
         self.position = 0               # The initial, neutral position
 
@@ -71,6 +73,8 @@ class NNTrader():
         self.raw_data = pd.DataFrame()
 
         self.client = BinanceFuturesApi('config.cfg', self.symbol, self.bar)
+        self.symbol_configuration = self.client.symbol_configuration(self.symbol)
+        print(f"Leverage: {self.symbol_configuration['leverage']}")
 
     def fill_data_with_history(self):
         history_df = self.client.get_history(limit=100)
@@ -78,13 +82,13 @@ class NNTrader():
         self.prepare_features()
 
     def prepare_features(self):
-        # Calculates the log returns from the closing prices
         epsilon = 1e-6
 
         small_period = 3
         medium_period = 9
         large_period = 20
 
+        # Calculates the log returns from the closing prices
         self.data['return'] = np.log(self.data['c'] / self.data['c'].shift(1))
 
         self.data['return_s'] = np.log(self.data['c'] / self.data['c'].shift(small_period))
@@ -169,21 +173,49 @@ class NNTrader():
 
             now = datetime.now()
             dt_string = now.strftime("%d.%m.%Y %H:%M:%S")
+            price_close = self.data["c"].iloc[-1]
+            growth_decay = 0.9
+
+            if self.prev_price is not None:
+                price_rel = price_close / self.prev_price
+
 
             if self.position in [0, -1] and signal == 1:
-                print(f'{dt_string} *** GOING LONG *** price: {self.data["c"].iloc[-1]}')
-                units = round(self.usd/self.data["c"].iloc[-1], self.precision)
+                if self.prev_price is not None:
+                    if self.position == -1:
+                        coef = self.symbol_configuration['leverage'] + 1 - self.symbol_configuration['leverage'] * price_rel
+
+                        if coef > 1:
+                            coef = (coef - 1) * growth_decay + 1
+
+                        self.usd = round( coef * self.usd, 2)
+
+                units = round(self.usd/price_close, self.precision)
+
+                print(f'{dt_string} *** GOING LONG *** price: {price_close} usd: {self.usd} units: {units}')
                 self.client.close_all_positions()
                 self.client.open_position('BUY', 'LONG', units)
                 self.position = 1
+                self.prev_price = price_close
             elif self.position in [0, 1] and signal == -1:
-                print(f'{dt_string} *** GOING SHORT *** price: {self.data["c"].iloc[-1]}')
-                units = round(self.usd/self.data["c"].iloc[-1], self.precision)
+                if self.prev_price is not None:
+                    if self.position == 1:
+                        coef = self.symbol_configuration['leverage'] * price_rel - self.symbol_configuration['leverage'] + 1
+
+                        if coef > 1:
+                            coef = (coef - 1) * growth_decay + 1
+
+                        self.usd = round( coef * self.usd, 2)
+
+                units = round(self.usd/price_close, self.precision)
+
+                print(f'{dt_string} *** GOING SHORT *** price: {price_close} usd: {self.usd} units: {units}')
                 self.client.close_all_positions()
                 self.client.open_position('SELL', 'SHORT', units)
                 self.position = -1
+                self.prev_price = price_close
             else:
-                print(f'{dt_string} price: {self.data["c"].iloc[-1]}')
+                print(f'{dt_string} price: {price_close}')
 
 
 class BinanceFuturesApi(object):
@@ -274,6 +306,14 @@ class BinanceFuturesApi(object):
                     error.status_code, error.error_code, error.error_message
                 )
             )
+
+    def symbol_configuration(self, symbol, **kwargs):
+        '''
+        https://developers.binance.com/docs/derivatives/usds-margined-futures/account/rest-api/Symbol-Config
+        '''
+        kwargs['symbol'] = symbol
+        response = self.client.symbol_configuration(**kwargs)
+        return response[0] if response else None
 
     def get_exchange_info(self):
         '''
