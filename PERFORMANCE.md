@@ -9,6 +9,7 @@ _Note: Performance does not include commissions_
 | Oct 24                      | +117%                 |
 | Nov 24                      | -13%                  |
 | Dec 24                      | +135%                 |
+| Jan 25                      | -20%                  |
 
 ## VETUSDT-4h
 
@@ -20,6 +21,7 @@ _Note: Performance does not include commissions_
 | Oct 24                      | +15%                  |
 | Nov 24                      | +45%                  |
 | Dec 24                      | +18%                  |
+| Jan 25                      | +68%                  |
 
 
 ## ZRXUSDT-4h
@@ -33,3 +35,4 @@ _Note: Performance does not include commissions_
 | Oct 24                      | -4%                   | +29%                  |
 | Nov 24                      | +38%                  | +57%                  |
 | Dec 24                      | +86%                  | +26%                  |
+| Jan 25                      | -22%                  | +9%                   |
