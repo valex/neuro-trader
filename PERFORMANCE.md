@@ -11,6 +11,19 @@ _Note: Performance does not include commissions_
 | Dec 24                      | +135%                 |
 | Jan 25                      | -20%                  |
 
+
+## VETUSDT-12h
+
+_Note: Performance does not include commissions_
+
+| Model                       | VETUSDT-12h/2025-01-31 |
+|-----------------------------|------------------------|
+| Oct 24                      | +11%                   |
+| Nov 24                      | +39%                   |
+| Dec 24                      | +171%                  |
+| Jan 25                      | +19%                   |
+
+
 ## VETUSDT-4h
 
 _Note: Performance does not include commissions_
