@@ -13,7 +13,7 @@ _Note: Performance does not include commissions_
 | Jan 25                      | -20%                  | +56%                  |
 | Feb 25                      | +15%                  | +59%                  |
 | Mar 25                      | -4%                   | +50%                  |
-
+| Apr 25                      | -6%                   | +60%                  |
 
 ---
 
@@ -30,7 +30,7 @@ _Note: Performance does not include commissions_
 | Jan 25                      | +19%                   |
 | Feb 25                      | +66%                   |
 | Mar 25                      | -21%                   |
-
+| Apr 25                      | +9%                    |
 
 
 ---
@@ -51,6 +51,7 @@ _Note: Performance does not include commissions_
 | Jan 25                      | +68%                  |
 | Feb 25                      | +75%                  |
 | Mar 25                      | -3%                   |
+| Apr 25                      | +43%                  |
 
 
 
@@ -71,6 +72,7 @@ _Note: Performance does not include commissions_
 | Jan 25                      | +9%                   |
 | Feb 25                      | +16%                  |
 | Mar 25                      | +40%                  |
+| Apr 25                      | -15%                  |
 
 
 
