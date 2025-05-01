@@ -2,18 +2,14 @@
 
 _Note: Performance does not include commissions_
 
-| Model                       | RSRUSDT-4h/2024-11-23 | RSRUSDT-4h/2025-03-15 |
-|-----------------------------|-----------------------|-----------------------|
-|                             | [Performance Chart](/models/RSRUSDT-4h/2024-11-23/performance.png) | [Performance Chart](/models/RSRUSDT-4h/2025-03-15/performance.png) |
-| Aug 24                      | +77%                  |                       |
-| Sep 24                      | +48%                  |                       |
-| Oct 24                      | +117%                 |                       |
-| Nov 24                      | -13%                  |                       |
-| Dec 24                      | +135%                 | +304%                 |
-| Jan 25                      | -20%                  | +56%                  |
-| Feb 25                      | +15%                  | +59%                  |
-| Mar 25                      | -4%                   | +50%                  |
-| Apr 25                      | -6%                   | +60%                  |
+| Model                       | RSRUSDT-4h/2025-03-15 |
+|-----------------------------|-----------------------|
+|                             | [Performance Chart](/models/RSRUSDT-4h/2025-03-15/performance.png) |
+| Dec 24                      | +304%                 |
+| Jan 25                      | +56%                  |
+| Feb 25                      | +59%                  |
+| Mar 25                      | +50%                  |
+| Apr 25                      | +60%                  |
 
 ---
 
