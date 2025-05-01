@@ -3,7 +3,7 @@
 _Note: Performance does not include commissions_
 
 | Model                       | RSRUSDT-4h/2024-11-23 |
-|-----------------------------|-----------------------|-----------------------|
+|-----------------------------|-----------------------|
 |                             | [Performance Chart](performance.png) |
 | Aug 24                      | +77%                  |
 | Sep 24                      | +48%                  |
