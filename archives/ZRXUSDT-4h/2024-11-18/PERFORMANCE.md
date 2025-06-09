@@ -1,0 +1,17 @@
+## ZRXUSDT-4h
+
+_Note: Performance does not include commissions_
+
+| Model                       | ZRXUSDT-4h/2024-11-18 |
+|-----------------------------|-----------------------|
+|                             | [Performance Chart](/archives/ZRXUSDT-4h/2024-11-18/performance.png) |
+| Aug 24                      | +46%                  |
+| Sep 24                      | -10%                  |
+| Oct 24                      | +29%                  |
+| Nov 24                      | +57%                  |
+| Dec 24                      | +26%                  |
+| Jan 25                      | +9%                   |
+| Feb 25                      | +16%                  |
+| Mar 25                      | +40%                  |
+| Apr 25                      | -15%                  |
+| May 25                      | +11%                  |

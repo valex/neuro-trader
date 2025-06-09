@@ -58,19 +58,13 @@ _Note: Performance does not include commissions_
 
 _Note: Performance does not include commissions_
 
-| Model                       | ZRXUSDT-4h/2025-05-24 | ZRXUSDT-4h/2024-11-18 |
-|-----------------------------|-----------------------|-----------------------|
-|                             | [Performance Chart](/models/ZRXUSDT-4h/2025-05-24/performance.png) | [Performance Chart](/models/ZRXUSDT-4h/2024-11-18/performance.png) |
-| Aug 24                      |                       | +46%                  |
-| Sep 24                      |                       | -10%                  |
-| Oct 24                      |                       | +29%                  |
-| Nov 24                      |                       | +57%                  |
-| Dec 24                      |                       | +26%                  |
-| Jan 25                      |                       | +9%                   |
-| Feb 25                      | +184%                 | +16%                  |
-| Mar 25                      | +7%                   | +40%                  |
-| Apr 25                      | +38%                  | -15%                  |
-| May 25                      | +15%                  | +11%                  |
+| Model                       | ZRXUSDT-4h/2025-05-24 |
+|-----------------------------|-----------------------|
+|                             | [Performance Chart](/models/ZRXUSDT-4h/2025-05-24/performance.png) |
+| Feb 25                      | +184%                 |
+| Mar 25                      | +7%                   |
+| Apr 25                      | +38%                  |
+| May 25                      | +15%                  |
 
 
 
